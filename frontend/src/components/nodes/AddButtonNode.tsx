@@ -12,10 +12,16 @@ const AddButtonNode: React.FC = () => {
             fontWeight: 'bold',
             color: '#444',
             userSelect: 'none',
+            cursor: 'pointer',
+            width: 30,
+            height: 30,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
         }}>
             +
-            <Handle type="target" position={Position.Top} style={{ visibility: 'hidden' }} />
-            <Handle type="source" position={Position.Bottom} style={{ visibility: 'hidden' }} />
+            <Handle type="target" position={Position.Top} style={{ opacity: 0, visibility: 'hidden'}} />
+            <Handle type="source" position={Position.Bottom} style={{ opacity: 0, visibility: 'hidden' }} />
         </div>
     );
 };
