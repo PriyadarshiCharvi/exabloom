@@ -1,0 +1,4 @@
+message_content.csv
+../backend-broken/node_modules/
+*.log
+.env
